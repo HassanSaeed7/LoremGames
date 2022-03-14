@@ -1,0 +1,157 @@
+$font1: 'Black Ops One', cursive;
+$font2: 'Cinzel', serif;
+$font4: 'Chonburi', cursive;
+$font5: 'Ruslan Display', cursive;
+$font6: 'Syne Mono', monospace;
+
+
+
+
+*, 
+*:before, 
+*:after {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;   
+    overflow: hidden;
+    background: black;
+    font-family: 'Noto Sans Mono', monospace;
+}
+
+
+.font1 {font-family: $font2}
+.font2 {font-family: $font6}
+.font3 {font-family: $font4}
+.font4 {font-family: $font5}
+.font5 {font-family: $font2}
+.font6 {font-family: $font1}
+
+header {
+    position: fixed;
+    width: 100%;
+    font-weight: bold;
+    z-index: 10;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: red;  
+    text-transform: uppercase;
+    h1 {
+        font-size: clamp(1.5rem, 1.75rem, 2.75rem);
+      
+    }
+}
+nav {
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+   
+}
+.nav-link {
+    text-decoration: none;
+    color: rgba(255, 0, 0, 0.65);
+    font-size: clamp(1.25rem, 1.5rem, 2.5rem);
+    line-height: 1.7;
+}
+.nav-link:hover {
+    color: rgba(255, 0, 0, 1);
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    opacity: 0.9;
+    
+}
+
+.child {
+  
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    transition: 1.25s;
+    width: calc( ( 100vw * 1.2 ) / 6);
+    transform: skew(-10deg);
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        position: relative;
+        filter: grayscale(100%);
+        -webkit-filter: grayscale(100%);
+        transition: filter 0.5s ease;
+     
+    }
+}
+
+
+
+.img-title { 
+    color: white;
+    font-size: clamp(2rem, 2.5vw, 3rem);
+    font-weight: bold;
+    opacity: 0;
+    transition: 0.25s;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: skewX(10deg);
+    text-transform: uppercase;
+}
+
+.text-container {
+    position: absolute;
+    background: rgba(0, 0 , 0, 0.2);
+    width: 100%;
+    height: 100%;
+}
+
+.child:hover {
+    flex: 2;
+    h2 {
+        transition-delay: 0.25s;
+        transition-duration: 0.5s;
+        opacity: 0.9;
+        cursor: default;
+    }
+    img {
+        filter: none;
+    }
+}
+
+.logo {
+    position: absolute;
+    top: 10%;
+    left: 0.75%;
+    width: 3%;
+}
+.social {
+    position: absolute;
+    bottom: 0;
+    right: 0.5%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 20vh;
+    i {
+        zoom: 200%;
+        &:hover {
+            cursor: pointer;
+            color: red;
+        }
+    }
+}
+
+
