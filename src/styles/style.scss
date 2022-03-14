@@ -54,10 +54,10 @@ nav {
     color: rgba(255, 0, 0, 0.65);
     font-size: clamp(1.25rem, 1.5rem, 2.5rem);
     line-height: 1.7;
-}
-.nav-link:hover {
+    &:hover {
     color: rgba(255, 0, 0, 1);
     cursor: pointer;
+    }
 }
 
 .container {
