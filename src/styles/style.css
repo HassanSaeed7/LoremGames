@@ -72,7 +72,7 @@ nav {
   transition: 0.2s;
 }
 .nav-link:hover {
-  color: white;
+  color: rgb(255, 255, 255);
   cursor: pointer;
 }
 
@@ -166,4 +166,9 @@ nav {
 .social i:hover {
   cursor: pointer;
   color: red;
+}
+
+.msg {
+  position: fixed;
+  bottom: 0;
 }/*# sourceMappingURL=style.css.map */
