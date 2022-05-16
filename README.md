@@ -7,6 +7,6 @@ I wanted to emulate their design using plain HTML and CSS.
 
 ****************************************************************
 
-I do not own any of it.
+I do not own the images nor products, please visit FromSoftware for more information.
 
 ****************************************************************
