@@ -164,4 +164,6 @@ nav {
 .msg {
     position: fixed;
     bottom: 0;
+    z-index: 100;
+    color: white;
 }
